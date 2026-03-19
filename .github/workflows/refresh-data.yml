@@ -1,0 +1,51 @@
+name: Refresh Parliament Data
+
+on:
+  schedule:
+    # Every Sunday at 02:00 UTC
+    - cron: '0 2 * * 0'
+  workflow_dispatch:   # allow manual trigger from GitHub UI
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # needed to commit & push updated data
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: parliament-quiz/package-lock.json
+
+      - name: Install dependencies
+        working-directory: parliament-quiz
+        run: npm ci
+
+      - name: Fetch Parliament data
+        working-directory: parliament-quiz
+        run: npm run fetch-data
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet parliament-quiz/src/data/members.json || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push updated data
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add parliament-quiz/src/data/members.json
+          git commit -m "chore: refresh Parliament member data [$(date -u +%Y-%m-%d)]"
+          git push
+
+      - name: Trigger Vercel deployment
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"
