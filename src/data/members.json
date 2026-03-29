@@ -4787,11 +4787,12 @@
     "party": "Sinn F\u00e9in",
     "house": "Commons",
     "constituency": "Mid Ulster",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5153/Thumbnail",
+    "photoUrl": "https://sinnfein.ie/wp-content/uploads/2025/02/Cathal-Mallaghan-1.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "scraped"
   },
   {
     "id": 4495,
@@ -8731,11 +8732,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5441/Thumbnail",
+    "photoUrl": "https://www.kcl.ac.uk/newimages/person-profile/2022a/sophy-antrobus-540-x-540.x027a8a99.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "scraped"
   },
   {
     "id": 56,
@@ -8848,11 +8850,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5433/Thumbnail",
+    "photoUrl": "https://lincoln.ox.ac.uk/asset/peter-babudu-1440x1624.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "manual"
   },
   {
     "id": 3451,
@@ -8966,11 +8969,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5438/Thumbnail",
+    "photoUrl": "https://www.queens.ox.ac.uk/wp-content/uploads/2022/08/Sir-Michael-Barber-copy.png",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "scraped"
   },
   {
     "id": 2501,
@@ -10169,11 +10173,12 @@
     "party": "Crossbench",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/3871/Thumbnail",
+    "photoUrl": "https://champions-speakers.co.uk/sites/default/files/2022-04/baroness_sue_campbell_ads.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "scraped"
   },
   {
     "id": 3831,
@@ -10592,11 +10597,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/1590/Thumbnail",
+    "photoUrl": "https://www.parliament.scot//-/media/images/home/building/spinthomepagefb.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "scraped"
   },
   {
     "id": 525,
@@ -10959,11 +10965,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5419/Thumbnail",
+    "photoUrl": "https://brendadacres.org.uk/wp-content/uploads/2018/06/cropped-20180509_185337-e1526212553139.jpg?w=200",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "scraped"
   },
   {
     "id": 4220,
@@ -11064,11 +11071,12 @@
     "party": "Conservative",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5431/Thumbnail",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Sharron_Davies.png",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "wikipedia-direct"
   },
   {
     "id": 4499,
@@ -11785,11 +11793,12 @@
     "party": "Conservative",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/4193/Thumbnail",
+    "photoUrl": "https://www.theconservativefoundation.co.uk/sites/www.theconservativefoundation.co.uk/files/styles/social_share_og_landscape/public/pink%20sky%20parliament%20banner%2C%20jul2018.jpg?itok=USgzCmQW",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "scraped"
   },
   {
     "id": 4208,
@@ -11903,11 +11912,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5423/Thumbnail",
+    "photoUrl": "https://assets.publishing.service.gov.uk/media/696f9bf95b6060ca6736a0ca/s465_Lord_Forbes_of_Newcastle_CBE.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "govuk"
   },
   {
     "id": 1141,
@@ -12730,11 +12740,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5373/Thumbnail",
+    "photoUrl": "https://assets.publishing.service.gov.uk/media/6799fd5ed4f0d327e77071e8/s465_baronessgustafsson.png",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "govuk"
   },
   {
     "id": 3580,
@@ -13387,11 +13398,12 @@
     "party": "Non-affiliated",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5445/Thumbnail",
+    "photoUrl": "https://tkat-trust.reactfiles.co.uk/uploads/tkatpage/80_7_s.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "manual"
   },
   {
     "id": 140,
@@ -13751,11 +13763,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5425/Thumbnail",
+    "photoUrl": "https://assets.nationbuilder.com/lwn/pages/10609/meta_images/original/Sara.jpg?1726667918",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "scraped"
   },
   {
     "id": 1980,
@@ -13791,11 +13804,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5434/Thumbnail",
+    "photoUrl": "https://www.worc.ox.ac.uk/wp-content/uploads/2023/11/david_isaac-e1702306604191.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "scraped"
   },
   {
     "id": 4619,
@@ -13921,11 +13935,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5418/Thumbnail",
+    "photoUrl": "http://static1.squarespace.com/static/5a17629b2278e73e3d57b256/t/5f4350e609e9764cd3fcc4a1/1598247146995/Law-Firm-in-North-and-Central-London.jpg?format=1500w",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "scraped"
   },
   {
     "id": 4949,
@@ -14169,11 +14184,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/4225/Thumbnail",
+    "photoUrl": "https://static1.squarespace.com/static/61d6f7e054be4a05ac56bf25/t/62e7b7082f0733755412f1d8/1773927570821/",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "manual"
   },
   {
     "id": 4913,
@@ -14655,11 +14671,12 @@
     "party": "Bishops",
     "house": "Lords",
     "constituency": "Bishops",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/4954/Thumbnail",
+    "photoUrl": "https://www.lichfield.anglican.org/content/pages/uploaded_images/Michael.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "manual"
   },
   {
     "id": 573,
@@ -14853,11 +14870,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5414/Thumbnail",
+    "photoUrl": "https://assets.publishing.service.gov.uk/media/68d28ccee65dc716bfb1dc5f/s465_Liz_Llyod_960x640.png",
     "isMinister": true,
     "ministerialTitle": "Parliamentary Under Secretary of State (Department for Science, Innovation and Technology)",
     "department": "Department For Science Innovation And Technology",
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "govuk"
   },
   {
     "id": 2047,
@@ -14970,11 +14988,12 @@
     "party": "Crossbench",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/4172/Thumbnail",
+    "photoUrl": "https://reprieve.org/wp-content/uploads/sites/2/2020/11/PatronImage_KenMacDonald.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "scraped"
   },
   {
     "id": 1881,
@@ -15492,11 +15511,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/4286/Thumbnail",
+    "photoUrl": "https://images.squarespace-cdn.com/content/v1/5edf5471273f4c32c8827557/1625760036444-KVZ9I72SWYMRTLUXCTPE/Lord+Mendelsohn+photo.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "manual"
   },
   {
     "id": 4890,
@@ -15622,11 +15642,12 @@
     "party": "Conservative",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5020/Thumbnail",
+    "photoUrl": "https://teamdomenica.com/wp-content/uploads/2023/09/rosa-monckton.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "manual"
   },
   {
     "id": 4544,
@@ -15950,11 +15971,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5443/Thumbnail",
+    "photoUrl": "https://cdn.gulte.com/wp-content/uploads/2026/02/uday-nagarju-.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "scraped"
   },
   {
     "id": 5439,
@@ -15963,11 +15985,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5439/Thumbnail",
+    "photoUrl": "https://static.wixstatic.com/media/807e06_0cbfb01e41784d39bb49ef99091f9c98~mv2.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "scraped"
   },
   {
     "id": 1251,
@@ -16003,11 +16026,12 @@
     "party": "Crossbench",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5416/Thumbnail",
+    "photoUrl": "https://static.wixstatic.com/media/3e2ff6_9b5b2528f266421ab65c802a1d5450d4~mv2.jpeg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "scraped"
   },
   {
     "id": 3690,
@@ -16095,11 +16119,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5393/Thumbnail",
+    "photoUrl": "https://yorks.unison.org.uk/content/uploads/sites/31/2025/03/Wendy-web-header-745x420.png",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "manual"
   },
   {
     "id": 1164,
@@ -16739,11 +16764,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5430/Thumbnail",
+    "photoUrl": "https://3329532.fs1.hubspotusercontent-na1.net/hub/3329532/hubfs/david-pitt-watson-small-faculty.webp",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "manual"
   },
   {
     "id": 4547,
@@ -16884,11 +16910,12 @@
     "party": "Conservative",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/4570/Thumbnail",
+    "photoUrl": "https://www.gordonpoole.com/wp-content/uploads/2024/06/Lord-Mark-Price-Waitrose-Speaker.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "scraped"
   },
   {
     "id": 217,
@@ -17027,11 +17054,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5388/Thumbnail",
+    "photoUrl": "https://s3.amazonaws.com/berkley-center/KrishRaval.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "scraped"
   },
   {
     "id": 4715,
@@ -17355,11 +17383,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5427/Thumbnail",
+    "photoUrl": "https://londonspeakerbureau.com/wp-content/uploads/2025/07/Andy-Roe.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "scraped"
   },
   {
     "id": 2478,
@@ -18353,11 +18382,12 @@
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5413/Thumbnail",
+    "photoUrl": "https://assets.publishing.service.gov.uk/media/68e92b6d187483de54d7677f/s465_jason-stockwood.jpg",
     "isMinister": true,
     "ministerialTitle": "Minister of State (HM Treasury)",
     "department": "Hm Treasury",
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "govuk"
   },
   {
     "id": 4215,
