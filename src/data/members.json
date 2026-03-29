@@ -9072,11 +9072,12 @@
     "party": "Crossbench",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5367/Thumbnail",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/20211104-OSEC-UNC-0001_%2851656317211%29_%28Minette_Batters_cropped%29.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "wikipedia-verified"
   },
   {
     "id": 1438,
@@ -10498,11 +10499,12 @@
     "party": "Bishops",
     "house": "Lords",
     "constituency": "Bishops",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5407/Thumbnail",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Bishops_with_clergy_%2853018348220%29_%28Mark_Tanner_cropped%29.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "wikipedia-verified"
   },
   {
     "id": 4695,
@@ -10511,11 +10513,12 @@
     "party": "Bishops",
     "house": "Lords",
     "constituency": "Bishops",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/4695/Thumbnail",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Arms_displayed_by_Richard_Poore%2C_Bishop_of_Chichester%2C_at_the_signing_of_Magna_Charta.png",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "wikipedia-verified"
   },
   {
     "id": 4330,
@@ -10784,11 +10787,12 @@
     "party": "Bishops",
     "house": "Lords",
     "constituency": "Bishops",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5402/Thumbnail",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a9/The_bishop%27s_house_in_coventry_19d07.JPG",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "wikipedia-verified"
   },
   {
     "id": 3364,
@@ -11243,11 +11247,12 @@
     "party": "Non-affiliated",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5424/Thumbnail",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Official_portrait_of_Leo_Docherty_MP_crop_2.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "wikipedia-verified"
   },
   {
     "id": 1388,
@@ -12225,11 +12230,12 @@
     "party": "Crossbench",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5415/Thumbnail",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Clare_Gerada.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "wikipedia-verified"
   },
   {
     "id": 4163,
@@ -13312,11 +13318,12 @@
     "party": "Bishops",
     "house": "Lords",
     "constituency": "Bishops",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5003/Thumbnail",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Arms_of_See_of_Hereford.png",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "wikipedia-verified"
   },
   {
     "id": 5365,
@@ -14713,11 +14720,12 @@
     "party": "Bishops",
     "house": "Lords",
     "constituency": "Bishops",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/4319/Thumbnail",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Arms_displayed_by_Hugh_de_Wells%2C_Bishop_of_Lincoln%2C_at_the_signing_of_Magna_Charta.png",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "wikipedia-verified"
   },
   {
     "id": 2059,
@@ -16414,11 +16422,12 @@
     "party": "Liberal Democrat",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/4310/Thumbnail",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Jamespalumbocropped.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "wikipedia-verified"
   },
   {
     "id": 3870,
@@ -16612,11 +16621,12 @@
     "party": "Bishops",
     "house": "Lords",
     "constituency": "Bishops",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5371/Thumbnail",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Diocese_of_Peterborough_arms.svg/500px-Diocese_of_Peterborough_arms.svg.png",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "wikipedia-verified"
   },
   {
     "id": 5015,
@@ -16807,11 +16817,12 @@
     "party": "Bishops",
     "house": "Lords",
     "constituency": "Bishops",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5412/Thumbnail",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/5/56/Admission_and_Licensing_of_new_Readers_by_the_Dean_of_York_%2851595553097%29_%28cropped_2%29.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "M"
+    "gender": "M",
+    "photoSource": "wikipedia-verified"
   },
   {
     "id": 2527,
@@ -18156,11 +18167,12 @@
     "party": "Bishops",
     "house": "Lords",
     "constituency": "Bishops",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/5417/Thumbnail",
+    "photoUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Seat_of_the_Bishop_of_St_Edmundsbury_and_Ipswich.jpg",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
-    "gender": "F"
+    "gender": "F",
+    "photoSource": "wikipedia-verified"
   },
   {
     "id": 2155,
