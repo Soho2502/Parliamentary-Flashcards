@@ -81,7 +81,11 @@ export function useDeck(allMembers: Member[], filters: Filters, user: User | nul
       setKnownIds(loadKnownLocal());
       return;
     }
-    loadKnownRemote(user.id).then(ids => setKnownIds(ids));
+    loadKnownRemote(user.id).then(ids => {
+      setKnownIds(ids);
+      // Sync members_known count to profile
+      supabase.from('profiles').update({ members_known: ids.size }).eq('id', user.id);
+    });
   }, [user]);
 
   const filteredMembers = useMemo(() => {

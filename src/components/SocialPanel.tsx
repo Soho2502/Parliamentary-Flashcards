@@ -24,7 +24,6 @@ export function SocialPanel({ user, profile, onNotificationsRead }: Props) {
   const [search, setSearch] = useState('');
   const [results, setResults] = useState<FriendProfile[]>([]);
   const [friends, setFriends] = useState<FriendProfile[]>([]);
-  const [followers, setFollowers] = useState<FriendProfile[]>([]);
   const [notifications, setNotifications] = useState<Notification[]>([]);
   const [searching, setSearching] = useState(false);
   const [friendIds, setFriendIds] = useState<Set<string>>(new Set());
@@ -39,18 +38,6 @@ export function SocialPanel({ user, profile, onNotificationsRead }: Props) {
           supabase.from('profiles').select('*').in('id', [...ids])
             .then(({ data: profiles }) => {
               setFriends((profiles ?? []).map(p => ({ ...p, isFollowing: true })));
-            });
-        }
-      });
-
-    // Load followers (people who follow me)
-    supabase.from('follows').select('follower_id').eq('following_id', user.id)
-      .then(({ data }) => {
-        const followerIds = (data ?? []).map((f: { follower_id: string }) => f.follower_id);
-        if (followerIds.length > 0) {
-          supabase.from('profiles').select('*').in('id', followerIds)
-            .then(({ data: profiles }) => {
-              setFollowers(profiles ?? []);
             });
         }
       });
@@ -94,7 +81,6 @@ export function SocialPanel({ user, profile, onNotificationsRead }: Props) {
       if (added) setFriends(prev => [...prev, { ...added, isFollowing: true }]);
     }
     setResults(prev => prev.map(p => p.id === targetId ? { ...p, isFollowing: !isFriend } : p));
-    setFollowers(prev => prev.map(p => p.id === targetId ? { ...p, isFollowing: !isFriend } : p));
   };
 
   return (
@@ -191,20 +177,6 @@ export function SocialPanel({ user, profile, onNotificationsRead }: Props) {
         </>
       )}
 
-      {/* Followers */}
-      {followers.length > 0 && (
-        <>
-          <h3 style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', marginBottom: 10, letterSpacing: 0.5, textTransform: 'uppercase' }}>
-            Followers ({followers.length})
-          </h3>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 24 }}>
-            {followers.map(p => (
-              <UserRow key={p.id} profile={{ ...p, isFollowing: friendIds.has(p.id) }} onToggle={() => toggleFriend(p.id)} addBackLabel />
-            ))}
-          </div>
-        </>
-      )}
-
       {/* Friends */}
       <h3 style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', marginBottom: 10, letterSpacing: 0.5, textTransform: 'uppercase' }}>
         Friends ({friends.length})
@@ -222,7 +194,7 @@ export function SocialPanel({ user, profile, onNotificationsRead }: Props) {
   );
 }
 
-function UserRow({ profile, onToggle, addBackLabel }: { profile: FriendProfile; onToggle: () => void; addBackLabel?: boolean }) {
+function UserRow({ profile, onToggle }: { profile: FriendProfile; onToggle: () => void }) {
   return (
     <div style={{
       background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 10,
@@ -241,7 +213,7 @@ function UserRow({ profile, onToggle, addBackLabel }: { profile: FriendProfile; 
           borderRadius: 8, padding: '6px 14px', fontSize: 13, fontWeight: 600, cursor: 'pointer',
         }}
       >
-        {profile.isFollowing ? 'Remove Friend' : addBackLabel ? 'Add Back' : 'Add Friend'}
+        {profile.isFollowing ? 'Remove Friend' : 'Add Friend'}
       </button>
     </div>
   );
