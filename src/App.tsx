@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { supabase } from './lib/supabase';
 import type { Filters } from './types';
 import { useDeck } from './hooks/useDeck';
 import { useAuth } from './hooks/useAuth';
@@ -22,6 +23,13 @@ export default function App() {
   const { user, loading: authLoading, signIn, signUp, signOut } = useAuth();
   const { profile, loading: profileLoading, createProfile } = useProfile(user);
   const [tab, setTab] = useState<Tab>('play');
+  const [unreadCount, setUnreadCount] = useState(0);
+
+  useEffect(() => {
+    if (!user) return;
+    supabase.from('notifications').select('id', { count: 'exact', head: true }).eq('user_id', user.id).eq('read', false)
+      .then(({ count }) => setUnreadCount(count ?? 0));
+  }, [user]);
 
   const [filters, setFilters] = useState<Filters>({
     house: 'all',
@@ -90,7 +98,20 @@ export default function App() {
               textTransform: 'capitalize',
             }}
           >
-            {t === 'play' ? '🃏 Play' : t === 'stats' ? '📊 Stats' : '👥 Friends'}
+            {t === 'play' ? '🃏 Play' : t === 'stats' ? '📊 Stats' : (
+              <span style={{ position: 'relative' }}>
+                👥 Friends
+                {unreadCount > 0 && (
+                  <span style={{
+                    position: 'absolute', top: -6, right: -10,
+                    background: 'var(--red-light)', color: '#fff',
+                    borderRadius: '50%', width: 16, height: 16,
+                    fontSize: 10, fontWeight: 700,
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  }}>{unreadCount}</span>
+                )}
+              </span>
+            )}
           </button>
         ))}
       </div>
@@ -122,7 +143,7 @@ export default function App() {
       )}
 
       {tab === 'social' && (
-        <SocialPanel user={user} profile={profile} />
+        <SocialPanel user={user} profile={profile} onNotificationsRead={() => setUnreadCount(0)} />
       )}
     </div>
   );

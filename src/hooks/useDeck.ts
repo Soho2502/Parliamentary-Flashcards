@@ -45,12 +45,12 @@ async function addKnownRemote(userId: string, memberId: number) {
 
 
 async function saveSession(userId: string, score: number, total: number, filters: Filters) {
-  await supabase.from('sessions').insert({
-    user_id: userId,
-    score,
-    total,
-    filters_json: filters,
-  });
+  await supabase.from('sessions').insert({ user_id: userId, score, total, filters_json: filters });
+  const pct = total > 0 ? Math.round((score / total) * 100) : 0;
+  const { data: profile } = await supabase.from('profiles').select('best_score').eq('id', userId).single();
+  if (profile && pct > (profile.best_score ?? 0)) {
+    await supabase.from('profiles').update({ best_score: pct }).eq('id', userId);
+  }
 }
 
 export function getPartyClass(party: string): string {
@@ -124,6 +124,7 @@ export function useDeck(allMembers: Member[], filters: Filters, user: User | nul
     setKnownIds(newKnown);
     if (user) {
       addKnownRemote(user.id, currentCard.id);
+      supabase.from('profiles').update({ members_known: newKnown.size }).eq('id', user.id);
     } else {
       saveKnownLocal(newKnown);
     }
