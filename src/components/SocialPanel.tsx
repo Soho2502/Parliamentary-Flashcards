@@ -123,10 +123,10 @@ export function SocialPanel({ user, profile }: Props) {
       )}
 
       <h3 style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', marginBottom: 10, letterSpacing: 0.5, textTransform: 'uppercase' }}>
-        Following ({following.length})
+        Friends ({following.length})
       </h3>
       {following.length === 0 ? (
-        <p style={{ fontSize: 14, color: 'var(--text-muted)' }}>You're not following anyone yet. Search for users above.</p>
+        <p style={{ fontSize: 14, color: 'var(--text-muted)' }}>You have no friends yet. Search for users above.</p>
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
           {following.map(p => (
@@ -163,7 +163,7 @@ function UserRow({ profile, onToggleFollow }: { profile: FollowProfile; onToggle
           cursor: 'pointer',
         }}
       >
-        {profile.isFollowing ? 'Unfollow' : 'Follow'}
+        {profile.isFollowing ? 'Remove Friend' : 'Add Friend'}
       </button>
     </div>
   );

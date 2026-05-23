@@ -90,7 +90,7 @@ export default function App() {
               textTransform: 'capitalize',
             }}
           >
-            {t === 'play' ? '🃏 Play' : t === 'stats' ? '📊 Stats' : '👥 Social'}
+            {t === 'play' ? '🃏 Play' : t === 'stats' ? '📊 Stats' : '👥 Friends'}
           </button>
         ))}
       </div>

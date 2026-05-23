@@ -51,6 +51,7 @@ export function SwipeContainer({ member, nextMember, onKnown, onUnknown, cardKey
           flex: 1,
           position: 'relative',
           maxWidth: 400,
+          maxHeight: 520,
           width: '100%',
           margin: '0 auto',
           minHeight: 0,

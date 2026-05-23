@@ -90,96 +90,77 @@ export function FlashCard({ member, isFlipped, onFlip, dragX, dragY, isDragging,
       <div className="card-scene" style={{ height: '100%' }}>
         <div className={`card-inner${isFlipped ? ' flipped' : ''}`}>
           {/* FRONT */}
-          <div className="card-face" style={{ background: 'var(--card-bg)', cursor: 'pointer' }} onClick={onFlip}>
-            {/* Photo */}
-            <div style={{ position: 'relative', height: '70%', background: '#0d1117', overflow: 'hidden' }}>
-              {!imgLoaded && (
-                <div className="skeleton" style={{ position: 'absolute', inset: 0, borderRadius: 0 }} />
-              )}
-              <img
-                src={imgError ? PLACEHOLDER : member.photoUrl}
-                alt={member.name}
-                onLoad={() => setImgLoaded(true)}
-                onError={() => { setImgError(true); setImgLoaded(true); }}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  objectPosition: 'top center',
-                  display: imgLoaded ? 'block' : 'none',
-                }}
-                draggable={false}
-              />
-              {/* Gradient overlay */}
-              <div style={{
-                position: 'absolute',
-                bottom: 0,
-                left: 0,
-                right: 0,
-                height: '40%',
-                background: 'linear-gradient(to bottom, transparent, var(--card-bg))',
-                pointerEvents: 'none',
-              }} />
-            </div>
+          <div className="card-face" style={{ background: 'var(--card-bg)', cursor: 'pointer', position: 'relative' }} onClick={onFlip}>
+            {/* Photo — full card */}
+            {!imgLoaded && (
+              <div className="skeleton" style={{ position: 'absolute', inset: 0, borderRadius: 0 }} />
+            )}
+            <img
+              src={imgError ? PLACEHOLDER : member.photoUrl}
+              alt={member.name}
+              onLoad={() => setImgLoaded(true)}
+              onError={() => { setImgError(true); setImgLoaded(true); }}
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                objectPosition: 'top center',
+                display: imgLoaded ? 'block' : 'none',
+              }}
+              draggable={false}
+            />
 
-            {/* Bottom info */}
-            <div style={{ padding: '16px 20px', display: 'flex', flexDirection: 'column', gap: 10 }}>
+            {/* Bottom overlay — sits over the lower portion of the photo */}
+            <div style={{
+              position: 'absolute',
+              bottom: 0,
+              left: 0,
+              right: 0,
+              padding: '32px 16px 14px',
+              background: 'linear-gradient(to bottom, transparent, rgba(13,17,23,0.97))',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 10,
+            }}>
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}>
                 <span style={{
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: 6,
-                  background: 'rgba(255,255,255,0.08)',
+                  background: 'rgba(255,255,255,0.12)',
                   borderRadius: 20,
-                  padding: '4px 12px',
-                  fontSize: 12,
+                  padding: '5px 13px',
+                  fontSize: 13,
                   fontWeight: 600,
                   color: 'var(--text-muted)',
-                  letterSpacing: 0.5,
                 }}>
-                  <span style={{
-                    width: 8,
-                    height: 8,
-                    borderRadius: '50%',
-                    display: 'inline-block',
-                    flexShrink: 0,
-                  }} className={partyClass} />
+                  <span style={{ width: 9, height: 9, borderRadius: '50%', display: 'inline-block', flexShrink: 0 }} className={partyClass} />
                   {member.party}
                 </span>
                 <span style={{
-                  background: member.house === 'Commons' ? 'rgba(0,107,60,0.25)' : 'rgba(201,162,39,0.2)',
+                  background: member.house === 'Commons' ? 'rgba(0,107,60,0.35)' : 'rgba(201,162,39,0.25)',
                   color: member.house === 'Commons' ? '#4ade80' : 'var(--gold-light)',
                   borderRadius: 20,
-                  padding: '4px 12px',
-                  fontSize: 12,
+                  padding: '5px 13px',
+                  fontSize: 13,
                   fontWeight: 600,
-                  letterSpacing: 0.5,
                 }}>
-                  {member.house === 'Commons' ? 'House of Commons' : 'House of Lords'}
+                  {member.house === 'Commons' ? 'Commons' : 'Lords'}
                 </span>
                 {member.isMinister && (
                   <span style={{
-                    background: 'rgba(201,162,39,0.2)',
+                    background: 'rgba(201,162,39,0.25)',
                     color: 'var(--gold-light)',
                     borderRadius: 20,
-                    padding: '4px 12px',
-                    fontSize: 12,
+                    padding: '5px 13px',
+                    fontSize: 13,
                     fontWeight: 600,
                   }}>★ Minister</span>
                 )}
               </div>
 
-              <div style={{
-                color: 'var(--text-muted)',
-                fontSize: 13,
-                textAlign: 'center',
-                marginTop: 4,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: 6,
-              }}>
-                <span style={{ fontSize: 16 }}>👆</span>
+              <div style={{ color: 'rgba(255,255,255,0.55)', fontSize: 14, display: 'flex', alignItems: 'center', gap: 6 }}>
+                <span style={{ fontSize: 15 }}>👆</span>
                 Tap to reveal
               </div>
             </div>
