@@ -1,9 +1,13 @@
+import type { User } from '@supabase/supabase-js';
+
 interface Props {
   onResetProgress: () => void;
   onReshuffle: () => void;
+  user: User | null;
+  onSignOut: () => void;
 }
 
-export function Header({ onResetProgress, onReshuffle }: Props) {
+export function Header({ onResetProgress, onReshuffle, user, onSignOut }: Props) {
   return (
     <header style={{
       display: 'flex',
@@ -31,13 +35,23 @@ export function Header({ onResetProgress, onReshuffle }: Props) {
         </div>
       </div>
 
-      <div style={{ display: 'flex', gap: 8 }}>
+      <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+        {user && (
+          <span style={{ fontSize: 11, color: 'var(--text-muted)', maxWidth: 120, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+            {user.email}
+          </span>
+        )}
         <HeaderBtn onClick={onReshuffle} title="Shuffle deck">
           🔀
         </HeaderBtn>
         <HeaderBtn onClick={onResetProgress} title="Reset all progress" danger>
           Reset
         </HeaderBtn>
+        {user && (
+          <HeaderBtn onClick={onSignOut} title="Sign out">
+            Sign out
+          </HeaderBtn>
+        )}
       </div>
     </header>
   );
