@@ -43,13 +43,6 @@ async function addKnownRemote(userId: string, memberId: number) {
     .upsert({ user_id: userId, member_id: memberId });
 }
 
-async function removeKnownRemote(userId: string, memberId: number) {
-  await supabase
-    .from('user_progress')
-    .delete()
-    .eq('user_id', userId)
-    .eq('member_id', memberId);
-}
 
 async function saveSession(userId: string, score: number, total: number, filters: Filters) {
   await supabase.from('sessions').insert({
