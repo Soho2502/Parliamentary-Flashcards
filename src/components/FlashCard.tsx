@@ -33,6 +33,7 @@ export function FlashCard({ member, isFlipped, onFlip, dragX, dragY, isDragging,
   const transition = swipeResult || !isDragging ? 'transform 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.35s ease' : 'none';
 
   const partyClass = getPartyClass(member.party);
+  const houseAccent = member.house === 'Commons' ? 'rgba(46,160,67,0.4)' : 'rgba(232,195,74,0.35)';
 
   const leftIndicatorOpacity = isDragging && dragX < -20 ? Math.min((-dragX - 20) / 80, 1) : 0;
   const rightIndicatorOpacity = isDragging && dragX > 20 ? Math.min((dragX - 20) / 80, 1) : 0;
@@ -90,7 +91,42 @@ export function FlashCard({ member, isFlipped, onFlip, dragX, dragY, isDragging,
       <div className="card-scene" style={{ height: '100%' }}>
         <div className={`card-inner${isFlipped ? ' flipped' : ''}`}>
           {/* FRONT */}
-          <div className="card-face" style={{ background: 'var(--card-bg)', cursor: 'pointer', position: 'relative' }} onClick={onFlip}>
+          <div
+            className="card-face"
+            style={{
+              background: 'var(--card-bg)',
+              cursor: 'pointer',
+              position: 'relative',
+              border: `1px solid ${houseAccent}`,
+              boxShadow: 'var(--shadow)',
+            }}
+            onClick={onFlip}
+          >
+            {/* Top accent bar — house colour, visible before flip */}
+            <div style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              height: 4,
+              zIndex: 2,
+              background: member.house === 'Commons'
+                ? 'linear-gradient(90deg, var(--green), var(--green-light))'
+                : 'linear-gradient(90deg, var(--gold), var(--gold-light))',
+            }} />
+
+            {/* Top vignette for legibility against bright photos */}
+            <div style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              height: 70,
+              background: 'linear-gradient(to bottom, rgba(13,17,23,0.45), transparent)',
+              pointerEvents: 'none',
+              zIndex: 1,
+            }} />
+
             {/* Photo — full card */}
             {!imgLoaded && (
               <div className="skeleton" style={{ position: 'absolute', inset: 0, borderRadius: 0 }} />
@@ -128,6 +164,7 @@ export function FlashCard({ member, isFlipped, onFlip, dragX, dragY, isDragging,
                   alignItems: 'center',
                   gap: 6,
                   background: 'rgba(255,255,255,0.12)',
+                  border: '1px solid rgba(255,255,255,0.18)',
                   borderRadius: 20,
                   padding: '5px 13px',
                   fontSize: 13,
@@ -139,6 +176,7 @@ export function FlashCard({ member, isFlipped, onFlip, dragX, dragY, isDragging,
                 </span>
                 <span style={{
                   background: member.house === 'Commons' ? 'rgba(0,107,60,0.35)' : 'rgba(201,162,39,0.25)',
+                  border: `1px solid ${member.house === 'Commons' ? 'rgba(46,160,67,0.5)' : 'rgba(232,195,74,0.45)'}`,
                   color: member.house === 'Commons' ? '#4ade80' : 'var(--gold-light)',
                   borderRadius: 20,
                   padding: '5px 13px',
@@ -150,6 +188,7 @@ export function FlashCard({ member, isFlipped, onFlip, dragX, dragY, isDragging,
                 {member.isMinister && (
                   <span style={{
                     background: 'rgba(201,162,39,0.25)',
+                    border: '1px solid rgba(232,195,74,0.45)',
                     color: 'var(--gold-light)',
                     borderRadius: 20,
                     padding: '5px 13px',
@@ -159,15 +198,41 @@ export function FlashCard({ member, isFlipped, onFlip, dragX, dragY, isDragging,
                 )}
               </div>
 
-              <div style={{ color: 'rgba(255,255,255,0.55)', fontSize: 14, display: 'flex', alignItems: 'center', gap: 6 }}>
-                <span style={{ fontSize: 15 }}>👆</span>
+              <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 6,
+                background: 'rgba(255,255,255,0.08)',
+                borderRadius: 20,
+                padding: '5px 12px',
+                color: 'var(--text)',
+                fontSize: 12,
+                fontWeight: 600,
+                width: 'fit-content',
+              }}>
+                <span style={{
+                  width: 6,
+                  height: 6,
+                  borderRadius: '50%',
+                  background: member.house === 'Commons' ? 'var(--green-light)' : 'var(--gold-light)',
+                  flexShrink: 0,
+                }} />
                 Tap to reveal
               </div>
             </div>
           </div>
 
           {/* BACK */}
-          <div className="card-face card-back" style={{ background: 'var(--card-bg)', display: 'flex', flexDirection: 'column' }}>
+          <div
+            className="card-face card-back"
+            style={{
+              background: 'var(--card-bg)',
+              display: 'flex',
+              flexDirection: 'column',
+              border: `1px solid ${houseAccent}`,
+              boxShadow: 'var(--shadow)',
+            }}
+          >
             {/* Header accent */}
             <div style={{
               height: 6,
