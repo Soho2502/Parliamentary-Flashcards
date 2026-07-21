@@ -44,7 +44,7 @@ export function SwipeContainer({ member, nextMember, onKnown, onUnknown, cardKey
   }, [isFlipped, triggerSwipe]);
 
   return (
-    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 16, minHeight: 0 }}>
+    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 12, minHeight: 0 }}>
       {/* Card area */}
       <div
         style={{
@@ -55,6 +55,8 @@ export function SwipeContainer({ member, nextMember, onKnown, onUnknown, cardKey
           width: '100%',
           margin: '0 auto',
           minHeight: 0,
+          overflow: 'hidden',
+          borderRadius: 20,
         }}
         onPointerDown={!isFlipped ? onPointerDown : undefined}
         onPointerMove={!isFlipped ? onPointerMove : undefined}
@@ -92,7 +94,6 @@ export function SwipeContainer({ member, nextMember, onKnown, onUnknown, cardKey
       {/* Action buttons */}
       <div style={{
         flexShrink: 0,
-        marginTop: 12,
         background: 'var(--surface)',
         border: '1px solid var(--border)',
         borderRadius: 16,
