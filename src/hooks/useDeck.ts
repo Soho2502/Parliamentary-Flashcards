@@ -7,12 +7,33 @@ const STORAGE_KEY = 'parliament-quiz-known';
 const REINSERTION_MIN = 10;
 const REINSERTION_MAX = 20;
 
-function shuffle<T>(arr: T[]): T[] {
+function shuffle(arr: Member[]): Member[] {
+  // Fisher-Yates
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]];
   }
+
+  // Anti-clustering pass: avoid adjacent cards sharing house or party
+  const LOOKAHEAD = 15;
+  const clashes = (x: Member, y: Member) =>
+    x.house === y.house || x.party === y.party;
+
+  for (let i = 0; i < a.length - 1; i++) {
+    if (!clashes(a[i], a[i + 1])) continue;
+    // Find a swap candidate further ahead that won't clash with either neighbour
+    const prev = a[i];
+    const next = a[i + 2] ?? null;
+    const limit = Math.min(i + 1 + LOOKAHEAD, a.length);
+    for (let j = i + 2; j < limit; j++) {
+      if (!clashes(prev, a[j]) && (next === null || !clashes(a[j], next))) {
+        [a[i + 1], a[j]] = [a[j], a[i + 1]];
+        break;
+      }
+    }
+  }
+
   return a;
 }
 
