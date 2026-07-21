@@ -91,12 +91,18 @@ export function SwipeContainer({ member, nextMember, onKnown, onUnknown, cardKey
 
       {/* Action buttons */}
       <div style={{
+        flexShrink: 0,
+        marginTop: 12,
+        background: 'var(--surface)',
+        border: '1px solid var(--border)',
+        borderRadius: 16,
+        padding: '12px 24px',
+      }}>
+      <div style={{
         display: 'flex',
         gap: 24,
         justifyContent: 'center',
         alignItems: 'center',
-        paddingBottom: 8,
-        flexShrink: 0,
       }}>
         <ActionButton
           onClick={() => triggerSwipe('left')}
@@ -145,6 +151,7 @@ export function SwipeContainer({ member, nextMember, onKnown, onUnknown, cardKey
           label="Knew it!"
           icon="✓"
         />
+      </div>
       </div>
 
       {/* Keyboard hint */}
