@@ -80,30 +80,33 @@ export default function App() {
         background: 'var(--surface)',
         flexShrink: 0,
       }}>
-        {(['play', 'stats', 'social'] as Tab[]).map(t => (
-          <button
-            key={t}
-            onClick={() => setTab(t)}
-            style={{
-              flex: 1,
-              padding: '10px 0',
-              border: 'none',
-              borderBottom: `2px solid ${tab === t ? 'var(--green-light)' : 'transparent'}`,
-              background: 'transparent',
-              color: tab === t ? 'var(--text)' : 'var(--text-muted)',
-              fontSize: 13,
-              fontWeight: tab === t ? 700 : 500,
-              cursor: 'pointer',
-              transition: 'all 0.15s',
-              textTransform: 'capitalize',
-            }}
-          >
-            {t === 'play' ? '🃏 Play' : t === 'stats' ? '📊 Stats' : (
-              <span style={{ position: 'relative' }}>
-                👥 Friends
-                {unreadCount > 0 && (
+        {(['play', 'stats', 'social'] as Tab[]).map(t => {
+          const icons: Record<Tab, string> = { play: '🃏', stats: '📊', social: '👥' };
+          const labels: Record<Tab, string> = { play: 'Play', stats: 'Stats', social: 'Friends' };
+          return (
+            <button
+              key={t}
+              onClick={() => setTab(t)}
+              style={{
+                flex: 1,
+                padding: '16px 0',
+                border: 'none',
+                borderBottom: `3px solid ${tab === t ? 'var(--green-light)' : 'transparent'}`,
+                background: 'transparent',
+                color: 'var(--text)',
+                cursor: 'pointer',
+                transition: 'all 0.15s',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: 4,
+              }}
+            >
+              <span style={{ fontSize: 24, lineHeight: 1, position: 'relative' }}>
+                {icons[t]}
+                {t === 'social' && unreadCount > 0 && (
                   <span style={{
-                    position: 'absolute', top: -6, right: -10,
+                    position: 'absolute', top: -4, right: -10,
                     background: 'var(--red-light)', color: '#fff',
                     borderRadius: '50%', width: 16, height: 16,
                     fontSize: 10, fontWeight: 700,
@@ -111,9 +114,10 @@ export default function App() {
                   }}>{unreadCount}</span>
                 )}
               </span>
-            )}
-          </button>
-        ))}
+              <span style={{ fontSize: 15, fontWeight: 700, lineHeight: 1 }}>{labels[t]}</span>
+            </button>
+          );
+        })}
       </div>
 
       {tab === 'play' && (
