@@ -106,7 +106,6 @@ export function SwipeContainer({ member, nextMember, onKnown, onUnknown, cardKey
       }}>
         <ActionButton
           onClick={() => triggerSwipe('left')}
-          disabled={!isFlipped}
           variant="wrong"
           label="Didn't know"
           icon="✕"
@@ -118,7 +117,7 @@ export function SwipeContainer({ member, nextMember, onKnown, onUnknown, cardKey
             style={{
               background: 'linear-gradient(135deg, var(--navy), #1a2f5e)',
               color: 'var(--text)',
-              border: '1px solid rgba(255,255,255,0.15)',
+              border: '2px solid var(--gold-light)',
               borderRadius: 50,
               padding: '10px 28px',
               fontSize: 14,
@@ -146,7 +145,6 @@ export function SwipeContainer({ member, nextMember, onKnown, onUnknown, cardKey
 
         <ActionButton
           onClick={() => triggerSwipe('right')}
-          disabled={!isFlipped}
           variant="correct"
           label="Knew it!"
           icon="✓"
@@ -168,9 +166,8 @@ export function SwipeContainer({ member, nextMember, onKnown, onUnknown, cardKey
   );
 }
 
-function ActionButton({ onClick, disabled, variant, label, icon }: {
+function ActionButton({ onClick, variant, label, icon }: {
   onClick: () => void;
-  disabled: boolean;
   variant: 'correct' | 'wrong';
   label: string;
   icon: string;
@@ -179,35 +176,33 @@ function ActionButton({ onClick, disabled, variant, label, icon }: {
   const colour = isCorrect ? 'var(--green-light)' : 'var(--red-light)';
   const bg = isCorrect ? 'rgba(0,107,60,0.15)' : 'rgba(185,28,28,0.15)';
   const bgHover = isCorrect ? 'rgba(0,107,60,0.3)' : 'rgba(185,28,28,0.3)';
-  const border = isCorrect ? 'rgba(46,160,67,0.4)' : 'rgba(185,28,28,0.4)';
+  const border = isCorrect ? '3px solid var(--green-light)' : '3px solid var(--red-light)';
 
   return (
     <button
       onClick={onClick}
-      disabled={disabled}
       title={label}
       style={{
         width: 56,
         height: 56,
         borderRadius: '50%',
-        background: disabled ? 'rgba(255,255,255,0.04)' : bg,
-        border: `2px solid ${disabled ? 'var(--border)' : border}`,
-        color: disabled ? 'var(--text-muted)' : colour,
+        background: bg,
+        border: border,
+        color: colour,
         fontSize: 22,
         fontWeight: 700,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         transition: 'all 0.15s',
-        boxShadow: disabled ? 'none' : `0 4px 15px ${isCorrect ? 'rgba(0,107,60,0.2)' : 'rgba(185,28,28,0.2)'}`,
-        opacity: disabled ? 0.5 : 1,
-        cursor: disabled ? 'not-allowed' : 'pointer',
+        boxShadow: `0 4px 15px ${isCorrect ? 'rgba(0,107,60,0.2)' : 'rgba(185,28,28,0.2)'}`,
+        cursor: 'pointer',
       }}
       onMouseEnter={e => {
-        if (!disabled) (e.currentTarget as HTMLButtonElement).style.background = bgHover;
+        (e.currentTarget as HTMLButtonElement).style.background = bgHover;
       }}
       onMouseLeave={e => {
-        if (!disabled) (e.currentTarget as HTMLButtonElement).style.background = bg;
+        (e.currentTarget as HTMLButtonElement).style.background = bg;
       }}
     >
       {icon}
