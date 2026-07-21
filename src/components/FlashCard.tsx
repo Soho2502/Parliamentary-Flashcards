@@ -242,13 +242,13 @@ export function FlashCard({ member, isFlipped, onFlip, dragX, dragY, isDragging,
             }} />
 
             {/* Thumbnail + answer */}
-            <div style={{ display: 'flex', flex: 1, flexDirection: 'column', padding: '24px 24px 20px', gap: 20, overflow: 'auto' }}>
+            <div style={{ display: 'flex', flex: 1, flexDirection: 'column', padding: '16px 20px 14px', gap: 14, overflow: 'auto' }}>
               {/* Small portrait */}
               <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
                 <div style={{
-                  width: 80,
-                  height: 100,
-                  borderRadius: 12,
+                  width: 68,
+                  height: 86,
+                  borderRadius: 10,
                   overflow: 'hidden',
                   flexShrink: 0,
                   border: '2px solid var(--border)',
@@ -278,7 +278,7 @@ export function FlashCard({ member, isFlipped, onFlip, dragX, dragY, isDragging,
               </div>
 
               {/* Details */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                 {member.constituency && (
                   <InfoRow
                     icon={member.house === 'Commons' ? '🗳️' : '👑'}
@@ -335,7 +335,7 @@ function InfoRow({ icon, label, value, highlight, partyClass }: {
     <div style={{
       background: 'rgba(255,255,255,0.04)',
       borderRadius: 10,
-      padding: '10px 14px',
+      padding: '6px 12px',
       display: 'flex',
       gap: 10,
       alignItems: 'flex-start',
