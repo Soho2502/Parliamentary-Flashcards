@@ -21,27 +21,24 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: parliament-quiz/package-lock.json
 
       - name: Install dependencies
-        working-directory: parliament-quiz
         run: npm ci
 
       - name: Fetch Parliament data
-        working-directory: parliament-quiz
         run: npm run fetch-data
 
       - name: Check for changes
         id: changes
         run: |
-          git diff --quiet parliament-quiz/src/data/members.json || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet src/data/members.json || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push updated data
         if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add parliament-quiz/src/data/members.json
+          git add src/data/members.json
           git commit -m "chore: refresh Parliament member data [$(date -u +%Y-%m-%d)]"
           git push
 
