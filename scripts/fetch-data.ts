@@ -33,6 +33,7 @@ interface BiographyPost {
 interface BiographyResponse {
   value: {
     governmentPosts: BiographyPost[];
+    oppositionPosts: BiographyPost[];
   };
 }
 
@@ -72,13 +73,16 @@ async function fetchAllMembers(house: 1 | 2): Promise<ApiMember[]> {
   return members;
 }
 
-async function fetchGovernmentPosts(memberId: number): Promise<BiographyPost[]> {
+async function fetchBiography(memberId: number): Promise<{ governmentPosts: BiographyPost[]; oppositionPosts: BiographyPost[] }> {
   try {
     const url = `${BASE_URL}/Members/${memberId}/Biography`;
     const data = await fetchJson<BiographyResponse>(url);
-    return data.value?.governmentPosts ?? [];
+    return {
+      governmentPosts: data.value?.governmentPosts ?? [],
+      oppositionPosts: data.value?.oppositionPosts ?? [],
+    };
   } catch {
-    return [];
+    return { governmentPosts: [], oppositionPosts: [] };
   }
 }
 
@@ -99,13 +103,14 @@ async function main() {
   let processed = 0;
 
   for (const member of allMembers) {
-    const posts = await fetchGovernmentPosts(member.id);
-    const currentPost = posts.find(p => p.endDate === null);
+    const { governmentPosts, oppositionPosts } = await fetchBiography(member.id);
+    const currentGovPost = governmentPosts.find(p => p.endDate === null);
+    const currentOppPost = oppositionPosts.find(p => p.endDate === null);
 
     // Extract department from additionalInfoLink if available
     let department: string | null = null;
-    if (currentPost?.additionalInfoLink) {
-      const match = currentPost.additionalInfoLink.match(/organisations\/([^/]+)/);
+    if (currentGovPost?.additionalInfoLink) {
+      const match = currentGovPost.additionalInfoLink.match(/organisations\/([^/]+)/);
       if (match) {
         department = match[1].replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
       }
@@ -119,10 +124,12 @@ async function main() {
       house: member.houseNum === 1 ? 'Commons' : 'Lords',
       constituency: member.latestHouseMembership?.membershipFrom ?? null,
       photoUrl: member.thumbnailUrl ?? `${BASE_URL}/Members/${member.id}/Thumbnail`,
-      isMinister: !!currentPost,
-      ministerialTitle: currentPost?.name ?? null,
+      isMinister: !!currentGovPost,
+      ministerialTitle: currentGovPost?.name ?? null,
       department,
       gender: member.gender,
+      isShadowMinister: !!currentOppPost,
+      shadowMinisterialTitle: currentOppPost?.name ?? null,
     });
 
     processed++;
@@ -139,6 +146,7 @@ async function main() {
   writeFileSync(outPath, JSON.stringify(results, null, 2));
   console.log(`\nSaved ${results.length} members to ${outPath}`);
   console.log(`Ministers: ${results.filter(m => m.isMinister).length}`);
+  console.log(`Shadow Ministers: ${results.filter(m => m.isShadowMinister).length}`);
   console.log(`MPs: ${results.filter(m => m.house === 'Commons').length}`);
   console.log(`Lords: ${results.filter(m => m.house === 'Lords').length}`);
 }

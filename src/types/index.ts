@@ -10,6 +10,8 @@ export interface Member {
   ministerialTitle: string | null;
   department: string | null;
   gender: string;
+  isShadowMinister: boolean;
+  shadowMinisterialTitle: string | null;
 }
 
 export type SwipeDirection = 'left' | 'right';
@@ -24,4 +26,5 @@ export interface Filters {
   house: 'all' | 'Commons' | 'Lords';
   party: string;
   ministersOnly: boolean;
+  shadowMinistersOnly: boolean;
 }

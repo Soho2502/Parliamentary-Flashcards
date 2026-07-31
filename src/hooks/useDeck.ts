@@ -114,6 +114,7 @@ export function useDeck(allMembers: Member[], filters: Filters, user: User | nul
       if (filters.house !== 'all' && m.house !== filters.house) return false;
       if (filters.party !== 'all' && !m.party.toLowerCase().includes(filters.party.toLowerCase())) return false;
       if (filters.ministersOnly && !m.isMinister) return false;
+      if (filters.shadowMinistersOnly && !m.isShadowMinister) return false;
       return true;
     });
   }, [allMembers, filters]);

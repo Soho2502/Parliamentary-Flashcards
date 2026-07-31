@@ -35,6 +35,7 @@ export default function App() {
     house: 'all',
     party: 'all',
     ministersOnly: false,
+    shadowMinistersOnly: false,
   });
 
   const {
@@ -132,7 +133,7 @@ export default function App() {
           <FiltersPanel filters={filters} onChange={handleFilterChange} total={total} />
           <main style={{ flex: 1, display: 'flex', flexDirection: 'column', padding: '16px', minHeight: 0, overflow: 'hidden' }}>
             {total === 0 ? (
-              <EmptyState onReset={() => handleFilterChange({ house: 'all', party: 'all', ministersOnly: false })} />
+              <EmptyState onReset={() => handleFilterChange({ house: 'all', party: 'all', ministersOnly: false, shadowMinistersOnly: false })} />
             ) : isFinished ? (
               <FinishedState total={total} sessionKnown={sessionKnown} onReshuffle={reshuffle} onReset={resetProgress} />
             ) : currentCard ? (

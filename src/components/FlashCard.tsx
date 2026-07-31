@@ -307,6 +307,14 @@ export function FlashCard({ member, isFlipped, onFlip, dragX, dragY, isDragging,
                     highlight="gold"
                   />
                 )}
+                {member.isShadowMinister && member.shadowMinisterialTitle && (
+                  <InfoRow
+                    icon="◈"
+                    label="Shadow Role"
+                    value={member.shadowMinisterialTitle}
+                    highlight="purple"
+                  />
+                )}
                 {member.department && (
                   <InfoRow
                     icon="🏢"
@@ -327,10 +335,10 @@ function InfoRow({ icon, label, value, highlight, partyClass }: {
   icon: string;
   label: string;
   value: string;
-  highlight?: 'green' | 'gold';
+  highlight?: 'green' | 'gold' | 'purple';
   partyClass?: string;
 }) {
-  const colour = highlight === 'green' ? '#4ade80' : highlight === 'gold' ? 'var(--gold-light)' : 'var(--text)';
+  const colour = highlight === 'green' ? '#4ade80' : highlight === 'gold' ? 'var(--gold-light)' : highlight === 'purple' ? '#a78bfa' : 'var(--text)';
   return (
     <div style={{
       background: 'rgba(255,255,255,0.04)',
