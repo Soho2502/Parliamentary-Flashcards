@@ -3,7 +3,7 @@
     "id": 172,
     "name": "Ms Diane Abbott",
     "fullTitle": "Rt Hon Diane Abbott MP",
-    "party": "Independent",
+    "party": "Labour",
     "house": "Commons",
     "constituency": "Hackney North and Stoke Newington",
     "photoUrl": "https://members-api.parliament.uk/api/Members/172/Thumbnail",
@@ -7473,7 +7473,7 @@
     "id": 5079,
     "name": "Joani Reid",
     "fullTitle": "Joani Reid MP",
-    "party": "Independent",
+    "party": "Labour",
     "house": "Commons",
     "constituency": "East Kilbride and Strathaven",
     "photoUrl": "https://members-api.parliament.uk/api/Members/5079/Thumbnail",
@@ -10091,8 +10091,8 @@
     "ministerialTitle": null,
     "department": null,
     "gender": "M",
-    "isShadowMinister": false,
-    "shadowMinisterialTitle": null
+    "isShadowMinister": true,
+    "shadowMinisterialTitle": "Opposition Whip (Lords)"
   },
   {
     "id": 2500,
@@ -14940,21 +14940,6 @@
     "shadowMinisterialTitle": null
   },
   {
-    "id": 196,
-    "name": "Lord Horam",
-    "fullTitle": "The Lord Horam",
-    "party": "Conservative",
-    "house": "Lords",
-    "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/196/Thumbnail",
-    "isMinister": false,
-    "ministerialTitle": null,
-    "department": null,
-    "gender": "M",
-    "isShadowMinister": false,
-    "shadowMinisterialTitle": null
-  },
-  {
     "id": 4991,
     "name": "Lord Houchen of High Leven",
     "fullTitle": "The Lord Houchen of High Leven",
@@ -16442,7 +16427,7 @@
   {
     "id": 4529,
     "name": "Lord Mackinlay of Richborough",
-    "fullTitle": "The Lord Mackinlay of Richborough JP",
+    "fullTitle": "The Lord Mackinlay of Richborough",
     "party": "Conservative",
     "house": "Lords",
     "constituency": "Life peer",
@@ -17891,21 +17876,6 @@
     "ministerialTitle": null,
     "department": null,
     "gender": "F",
-    "isShadowMinister": false,
-    "shadowMinisterialTitle": null
-  },
-  {
-    "id": 4279,
-    "name": "The Lord Bishop of Oxford",
-    "fullTitle": "The Rt. Rev the Lord Bishop of Oxford",
-    "party": "Bishops",
-    "house": "Lords",
-    "constituency": "Bishops",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/4279/Thumbnail",
-    "isMinister": false,
-    "ministerialTitle": null,
-    "department": null,
-    "gender": "M",
     "isShadowMinister": false,
     "shadowMinisterialTitle": null
   },
