@@ -2985,6 +2985,21 @@
     "shadowMinisterialTitle": null
   },
   {
+    "id": 5091,
+    "name": "Nigel Farage",
+    "fullTitle": "Nigel Farage MP",
+    "party": "Reform UK",
+    "house": "Commons",
+    "constituency": "Clacton",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5091/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 5107,
     "name": "Linsey Farnsworth",
     "fullTitle": "Linsey Farnsworth MP",
@@ -7074,7 +7089,7 @@
     "photoUrl": "https://members-api.parliament.uk/api/Members/4046/Thumbnail",
     "isMinister": true,
     "ministerialTitle": "Minister for Women and Equalities",
-    "department": null,
+    "department": "Ministry Of Housing Communities Local Government",
     "gender": "F",
     "isShadowMinister": false,
     "shadowMinisterialTitle": null
@@ -18915,6 +18930,21 @@
     "shadowMinisterialTitle": "Shadow Minister (Environment, Food and Rural Affairs)"
   },
   {
+    "id": 5455,
+    "name": "The Lord Bishop of Rochester",
+    "fullTitle": "The Rt. Rev the Lord Bishop of Rochester",
+    "party": "Bishops",
+    "house": "Lords",
+    "constituency": "Bishops",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5455/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 4556,
     "name": "Baroness Rock",
     "fullTitle": "The Baroness Rock",
@@ -19693,21 +19723,6 @@
     "gender": "F",
     "isShadowMinister": true,
     "shadowMinisterialTitle": "Liberal Democrat Lords Spokesperson (Defence)"
-  },
-  {
-    "id": 319,
-    "name": "Lord Snape",
-    "fullTitle": "The Lord Snape",
-    "party": "Labour",
-    "house": "Lords",
-    "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/319/Thumbnail",
-    "isMinister": false,
-    "ministerialTitle": null,
-    "department": null,
-    "gender": "M",
-    "isShadowMinister": false,
-    "shadowMinisterialTitle": null
   },
   {
     "id": 116,
