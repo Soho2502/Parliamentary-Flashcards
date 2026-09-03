@@ -3,7 +3,7 @@
     "id": 172,
     "name": "Ms Diane Abbott",
     "fullTitle": "Rt Hon Diane Abbott MP",
-    "party": "Independent",
+    "party": "Labour",
     "house": "Commons",
     "constituency": "Hackney North and Stoke Newington",
     "photoUrl": "https://members-api.parliament.uk/api/Members/172/Thumbnail",
@@ -93,7 +93,7 @@
     "id": 5097,
     "name": "Mr Bayo Alaba",
     "fullTitle": "Mr Bayo Alaba MP",
-    "party": "Labour",
+    "party": "Independent",
     "house": "Commons",
     "constituency": "Southend East and Rochford",
     "photoUrl": "https://members-api.parliament.uk/api/Members/5097/Thumbnail",
@@ -1044,7 +1044,7 @@
     "photoUrl": "https://members-api.parliament.uk/api/Members/5236/Thumbnail",
     "isMinister": true,
     "ministerialTitle": "Government Whip, Lord Commissioner of HM Treasury",
-    "department": "Hm Treasury",
+    "department": null,
     "gender": "F",
     "isShadowMinister": false,
     "shadowMinisterialTitle": null
@@ -1187,7 +1187,7 @@
   {
     "id": 1446,
     "name": "Chris Bryant",
-    "fullTitle": "Chris Bryant MP",
+    "fullTitle": "Rt Hon Chris Bryant MP",
     "party": "Labour",
     "house": "Commons",
     "constituency": "Rhondda and Ogmore",
@@ -2319,7 +2319,7 @@
     "photoUrl": "https://members-api.parliament.uk/api/Members/5041/Thumbnail",
     "isMinister": true,
     "ministerialTitle": "Government Whip, Lord Commissioner of HM Treasury",
-    "department": "Hm Treasury",
+    "department": null,
     "gender": "M",
     "isShadowMinister": false,
     "shadowMinisterialTitle": null
@@ -2702,7 +2702,7 @@
   {
     "id": 491,
     "name": "Dame Angela Eagle",
-    "fullTitle": "Dame Angela Eagle MP",
+    "fullTitle": "Rt Hon Dame Angela Eagle MP",
     "party": "Labour",
     "house": "Commons",
     "constituency": "Wallasey",
@@ -2957,7 +2957,7 @@
   {
     "id": 5099,
     "name": "Miatta Fahnbulleh",
-    "fullTitle": "Miatta Fahnbulleh MP",
+    "fullTitle": "Rt Hon Miatta Fahnbulleh MP",
     "party": "Labour (Co-op)",
     "house": "Commons",
     "constituency": "Peckham",
@@ -2972,7 +2972,7 @@
   {
     "id": 5148,
     "name": "Mr Hamish Falconer",
-    "fullTitle": "Mr Hamish Falconer MP",
+    "fullTitle": "Rt Hon Hamish Falconer MP",
     "party": "Labour",
     "house": "Commons",
     "constituency": "Lincoln",
@@ -2980,6 +2980,21 @@
     "isMinister": true,
     "ministerialTitle": "Minister of State (Cabinet Office) (Jointly with the Foreign, Commonwealth and Development Office)",
     "department": "Foreign Commonwealth Development Office",
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
+    "id": 5091,
+    "name": "Nigel Farage",
+    "fullTitle": "Nigel Farage MP",
+    "party": "Reform UK",
+    "house": "Commons",
+    "constituency": "Clacton",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5091/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
     "gender": "M",
     "isShadowMinister": false,
     "shadowMinisterialTitle": null
@@ -4284,7 +4299,7 @@
     "photoUrl": "https://members-api.parliament.uk/api/Members/5113/Thumbnail",
     "isMinister": true,
     "ministerialTitle": "Government Whip, Lord Commissioner of HM Treasury",
-    "department": "Hm Treasury",
+    "department": null,
     "gender": "F",
     "isShadowMinister": false,
     "shadowMinisterialTitle": null
@@ -4862,7 +4877,7 @@
   {
     "id": 4359,
     "name": "Stephen Kinnock",
-    "fullTitle": "Stephen Kinnock MP",
+    "fullTitle": "Rt Hon Stephen Kinnock MP",
     "party": "Labour",
     "house": "Commons",
     "constituency": "Aberafan Maesteg",
@@ -6002,14 +6017,14 @@
   {
     "id": 5038,
     "name": "Anneliese Midgley",
-    "fullTitle": "Anneliese Midgley MP",
+    "fullTitle": "Rt Hon Anneliese Midgley MP",
     "party": "Labour",
     "house": "Commons",
     "constituency": "Knowsley",
     "photoUrl": "https://members-api.parliament.uk/api/Members/5038/Thumbnail",
     "isMinister": true,
     "ministerialTitle": "Parliamentary Secretary to the Treasury (Chief Whip)",
-    "department": "Hm Treasury",
+    "department": null,
     "gender": "F",
     "isShadowMinister": false,
     "shadowMinisterialTitle": null
@@ -6557,7 +6572,7 @@
   {
     "id": 5039,
     "name": "Kanishka Narayan",
-    "fullTitle": "Kanishka Narayan MP",
+    "fullTitle": "Rt Hon Kanishka Narayan MP",
     "party": "Labour",
     "house": "Commons",
     "constituency": "Vale of Glamorgan",
@@ -6662,7 +6677,7 @@
   {
     "id": 4641,
     "name": "Alex Norris",
-    "fullTitle": "Alex Norris MP",
+    "fullTitle": "Rt Hon Alex Norris MP",
     "party": "Labour (Co-op)",
     "house": "Commons",
     "constituency": "Nottingham North and Kimberley",
@@ -7007,7 +7022,7 @@
   {
     "id": 4520,
     "name": "Matthew Pennycook",
-    "fullTitle": "Matthew Pennycook MP",
+    "fullTitle": "Rt Hon Matthew Pennycook MP",
     "party": "Labour",
     "house": "Commons",
     "constituency": "Greenwich and Woolwich",
@@ -7074,7 +7089,7 @@
     "photoUrl": "https://members-api.parliament.uk/api/Members/4046/Thumbnail",
     "isMinister": true,
     "ministerialTitle": "Minister for Women and Equalities",
-    "department": null,
+    "department": "Ministry Of Housing Communities Local Government",
     "gender": "F",
     "isShadowMinister": false,
     "shadowMinisterialTitle": null
@@ -7224,7 +7239,7 @@
     "photoUrl": "https://members-api.parliament.uk/api/Members/5167/Thumbnail",
     "isMinister": true,
     "ministerialTitle": "Government Whip, Lord Commissioner of HM Treasury",
-    "department": "Hm Treasury",
+    "department": null,
     "gender": "M",
     "isShadowMinister": false,
     "shadowMinisterialTitle": null
@@ -7473,7 +7488,7 @@
     "id": 5079,
     "name": "Joani Reid",
     "fullTitle": "Joani Reid MP",
-    "party": "Independent",
+    "party": "Labour",
     "house": "Commons",
     "constituency": "East Kilbride and Strathaven",
     "photoUrl": "https://members-api.parliament.uk/api/Members/5079/Thumbnail",
@@ -8307,13 +8322,13 @@
     "department": null,
     "gender": "F",
     "isShadowMinister": true,
-    "shadowMinisterialTitle": "Green Spokesperson (Housing, Communities and Local Government)"
+    "shadowMinisterialTitle": "Green Spokesperson (Business, Innovation, Science and Trade)"
   },
   {
     "id": 5303,
     "name": "Patrick Spencer",
     "fullTitle": "Patrick Spencer MP",
-    "party": "Independent",
+    "party": "Conservative",
     "house": "Commons",
     "constituency": "Central Suffolk and North Ipswich",
     "photoUrl": "https://members-api.parliament.uk/api/Members/5303/Thumbnail",
@@ -9219,7 +9234,7 @@
     "photoUrl": "https://members-api.parliament.uk/api/Members/4871/Thumbnail",
     "isMinister": true,
     "ministerialTitle": "Government Whip, Lord Commissioner of HM Treasury",
-    "department": "Hm Treasury",
+    "department": null,
     "gender": "M",
     "isShadowMinister": false,
     "shadowMinisterialTitle": null
@@ -10091,8 +10106,8 @@
     "ministerialTitle": null,
     "department": null,
     "gender": "M",
-    "isShadowMinister": false,
-    "shadowMinisterialTitle": null
+    "isShadowMinister": true,
+    "shadowMinisterialTitle": "Opposition Whip (Lords)"
   },
   {
     "id": 2500,
@@ -10372,6 +10387,21 @@
     "house": "Lords",
     "constituency": "Life peer",
     "photoUrl": "https://members-api.parliament.uk/api/Members/1091/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
+    "id": 5460,
+    "name": "The Lord Bishop of Bath and Wells",
+    "fullTitle": "The Rt Rev. the Lord Bishop of Bath and Wells",
+    "party": "Bishops",
+    "house": "Lords",
+    "constituency": "Bishops",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5460/Thumbnail",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
@@ -10902,7 +10932,7 @@
     "department": null,
     "gender": "F",
     "isShadowMinister": true,
-    "shadowMinisterialTitle": "Liberal Democrat Lords Spokesperson (Culture, Media and Sport)"
+    "shadowMinisterialTitle": "Liberal Democrat Lords Spokesperson (Digital, Culture, Media and Sport)"
   },
   {
     "id": 5016,
@@ -12292,6 +12322,21 @@
     "house": "Lords",
     "constituency": "Life peer",
     "photoUrl": "https://members-api.parliament.uk/api/Members/3779/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
+    "id": 5469,
+    "name": "Lord Davey of Chalk Farm",
+    "fullTitle": "The Lord Davey of Chalk Farm CBE",
+    "party": "Labour",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5469/Thumbnail",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
@@ -14940,21 +14985,6 @@
     "shadowMinisterialTitle": null
   },
   {
-    "id": 196,
-    "name": "Lord Horam",
-    "fullTitle": "The Lord Horam",
-    "party": "Conservative",
-    "house": "Lords",
-    "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/196/Thumbnail",
-    "isMinister": false,
-    "ministerialTitle": null,
-    "department": null,
-    "gender": "M",
-    "isShadowMinister": false,
-    "shadowMinisterialTitle": null
-  },
-  {
     "id": 4991,
     "name": "Lord Houchen of High Leven",
     "fullTitle": "The Lord Houchen of High Leven",
@@ -15117,7 +15147,7 @@
     "department": null,
     "gender": "M",
     "isShadowMinister": true,
-    "shadowMinisterialTitle": "Shadow Minister (Business and Trade)"
+    "shadowMinisterialTitle": "Shadow Minister (Business, Innovation, Science and Trade)"
   },
   {
     "id": 5398,
@@ -15202,6 +15232,21 @@
     "house": "Lords",
     "constituency": "Life peer",
     "photoUrl": "https://members-api.parliament.uk/api/Members/5434/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
+    "id": 5458,
+    "name": "Lord Jabbar",
+    "fullTitle": "The Lord Jabbar MBE",
+    "party": "Labour",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5458/Thumbnail",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
@@ -15645,6 +15690,21 @@
     "shadowMinisterialTitle": null
   },
   {
+    "id": 1577,
+    "name": "Lord Khan of Tooting",
+    "fullTitle": "The Rt Hon. the   Lord Khan of Tooting",
+    "party": "Labour",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/1577/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 4258,
     "name": "Baroness Kidron",
     "fullTitle": "The Baroness Kidron OBE",
@@ -16080,6 +16140,36 @@
     "shadowMinisterialTitle": null
   },
   {
+    "id": 5472,
+    "name": "Lord Leunig",
+    "fullTitle": "The Lord Leunig",
+    "party": "Liberal Democrat",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5472/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
+    "id": 5468,
+    "name": "Lord Leveson of Liverpool",
+    "fullTitle": "The Rt Hon. the Lord Leveson of Liverpool",
+    "party": "Crossbench",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5468/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 5381,
     "name": "Baroness Levitt",
     "fullTitle": "The Baroness Levitt KC",
@@ -16380,6 +16470,21 @@
     "shadowMinisterialTitle": null
   },
   {
+    "id": 5459,
+    "name": "Baroness Lowe of Armley",
+    "fullTitle": "The Baroness Lowe of Armley OBE",
+    "party": "Labour",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5459/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "F",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 1867,
     "name": "Baroness Ludford",
     "fullTitle": "The Baroness Ludford",
@@ -16425,6 +16530,21 @@
     "shadowMinisterialTitle": null
   },
   {
+    "id": 5461,
+    "name": "Lord Macintosh of Eastwood",
+    "fullTitle": "The Rt Hon. the Lord Macintosh of Eastwood DL",
+    "party": "Labour",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5461/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 1881,
     "name": "Lord Mackenzie of Framwellgate",
     "fullTitle": "The Lord Mackenzie of Framwellgate OBE",
@@ -16440,9 +16560,24 @@
     "shadowMinisterialTitle": null
   },
   {
+    "id": 5466,
+    "name": "Baroness Mackenzie of Sherwood",
+    "fullTitle": "The Baroness Mackenzie of Sherwood CBE",
+    "party": "Labour",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5466/Thumbnail",
+    "isMinister": true,
+    "ministerialTitle": "Parliamentary Under-Secretary of State (Department for Digital, Culture, Media and Sport)",
+    "department": "Department For Culture Media Sport",
+    "gender": "F",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 4529,
     "name": "Lord Mackinlay of Richborough",
-    "fullTitle": "The Lord Mackinlay of Richborough JP",
+    "fullTitle": "The Lord Mackinlay of Richborough",
     "party": "Conservative",
     "house": "Lords",
     "constituency": "Life peer",
@@ -16800,6 +16935,21 @@
     "shadowMinisterialTitle": null
   },
   {
+    "id": 5456,
+    "name": "Baroness McAnea",
+    "fullTitle": "The Baroness McAnea",
+    "party": "Labour",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5456/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "F",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 298,
     "name": "Lord McCabe",
     "fullTitle": "The Lord McCabe",
@@ -16995,6 +17145,21 @@
     "shadowMinisterialTitle": null
   },
   {
+    "id": 5470,
+    "name": "Lord McTague",
+    "fullTitle": "The Lord McTague OBE",
+    "party": "Labour",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5470/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 4286,
     "name": "Lord Mendelsohn",
     "fullTitle": "The Lord Mendelsohn",
@@ -17062,6 +17227,21 @@
     "house": "Lords",
     "constituency": "Life peer",
     "photoUrl": "https://members-api.parliament.uk/api/Members/1934/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "F",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
+    "id": 5475,
+    "name": "Baroness Mills of Greenwich",
+    "fullTitle": "The Baroness Mills of Greenwich KC",
+    "party": "Labour",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5475/Thumbnail",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
@@ -17550,6 +17730,21 @@
     "shadowMinisterialTitle": null
   },
   {
+    "id": 5465,
+    "name": "Lord Neri",
+    "fullTitle": "The Lord Neri",
+    "party": "Labour",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5465/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 3690,
     "name": "Baroness Neuberger",
     "fullTitle": "The Baroness Neuberger DBE",
@@ -17895,21 +18090,6 @@
     "shadowMinisterialTitle": null
   },
   {
-    "id": 4279,
-    "name": "The Lord Bishop of Oxford",
-    "fullTitle": "The Rt. Rev the Lord Bishop of Oxford",
-    "party": "Bishops",
-    "house": "Lords",
-    "constituency": "Bishops",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/4279/Thumbnail",
-    "isMinister": false,
-    "ministerialTitle": null,
-    "department": null,
-    "gender": "M",
-    "isShadowMinister": false,
-    "shadowMinisterialTitle": null
-  },
-  {
     "id": 5389,
     "name": "Lord Pack",
     "fullTitle": "The Lord Pack",
@@ -18012,7 +18192,7 @@
     "department": null,
     "gender": "M",
     "isShadowMinister": true,
-    "shadowMinisterialTitle": "Shadow Minister (Culture, Media and Sport)"
+    "shadowMinisterialTitle": "Shadow Minister (Digital, Culture, Media and Sport)"
   },
   {
     "id": 4178,
@@ -18172,6 +18352,21 @@
     "house": "Lords",
     "constituency": "Life peer",
     "photoUrl": "https://members-api.parliament.uk/api/Members/5015/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
+    "id": 5473,
+    "name": "Lord Petterson",
+    "fullTitle": "The Lord Petterson",
+    "party": "Liberal Democrat",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5473/Thumbnail",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
@@ -18945,6 +19140,21 @@
     "shadowMinisterialTitle": "Shadow Minister (Environment, Food and Rural Affairs)"
   },
   {
+    "id": 5455,
+    "name": "The Lord Bishop of Rochester",
+    "fullTitle": "The Rt Rev. the Lord Bishop of Rochester",
+    "party": "Bishops",
+    "house": "Lords",
+    "constituency": "Bishops",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5455/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 4556,
     "name": "Baroness Rock",
     "fullTitle": "The Baroness Rock",
@@ -19050,6 +19260,21 @@
     "shadowMinisterialTitle": null
   },
   {
+    "id": 5467,
+    "name": "Lord Ross of Nevill Holt",
+    "fullTitle": "The Lord Ross of Nevill Holt",
+    "party": "Conservative",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5467/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 554,
     "name": "Lord Rowlands",
     "fullTitle": "The Lord Rowlands CBE",
@@ -19141,8 +19366,8 @@
   },
   {
     "id": 5451,
-    "name": "Bishop of Salisbury",
-    "fullTitle": "The Rt Rev. Bishop of Salisbury",
+    "name": "The Lord Bishop of Salisbury",
+    "fullTitle": "The Rt Rev. the Lord Bishop of Salisbury",
     "party": "Bishops",
     "house": "Lords",
     "constituency": "Bishops",
@@ -19180,6 +19405,36 @@
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
+    "id": 5464,
+    "name": "Baroness Sarpong",
+    "fullTitle": "The Baroness Sarpong OBE",
+    "party": "Labour",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5464/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "F",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
+    "id": 3981,
+    "name": "Lord Sarwar",
+    "fullTitle": "The Lord Sarwar",
+    "party": "Labour",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/3981/Thumbnail",
+    "isMinister": true,
+    "ministerialTitle": "Minister of State (Department for Business, Innovation, Science and Trade)",
+    "department": "Department For Business And Trade",
     "gender": "M",
     "isShadowMinister": false,
     "shadowMinisterialTitle": null
@@ -19437,7 +19692,7 @@
     "department": null,
     "gender": "M",
     "isShadowMinister": true,
-    "shadowMinisterialTitle": "Shadow Minister (Business and Trade)"
+    "shadowMinisterialTitle": "Shadow Minister (Business, Innovation, Science and Trade)"
   },
   {
     "id": 5406,
@@ -19590,6 +19845,21 @@
     "shadowMinisterialTitle": null
   },
   {
+    "id": 5462,
+    "name": "Lord Singh of Solihull",
+    "fullTitle": "The Lord Singh of Solihull",
+    "party": "Conservative",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5462/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 4251,
     "name": "Lord Singh of Wimbledon",
     "fullTitle": "The Lord Singh of Wimbledon CBE",
@@ -19725,13 +19995,13 @@
     "shadowMinisterialTitle": "Liberal Democrat Lords Spokesperson (Defence)"
   },
   {
-    "id": 319,
-    "name": "Lord Snape",
-    "fullTitle": "The Lord Snape",
+    "id": 5457,
+    "name": "Lord Smith of Ranmoor",
+    "fullTitle": "The Lord Smith of Ranmoor CBE",
     "party": "Labour",
     "house": "Lords",
     "constituency": "Life peer",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/319/Thumbnail",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5457/Thumbnail",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
@@ -19747,21 +20017,6 @@
     "house": "Lords",
     "constituency": "Life peer",
     "photoUrl": "https://members-api.parliament.uk/api/Members/116/Thumbnail",
-    "isMinister": false,
-    "ministerialTitle": null,
-    "department": null,
-    "gender": "M",
-    "isShadowMinister": false,
-    "shadowMinisterialTitle": null
-  },
-  {
-    "id": 4345,
-    "name": "The Lord Bishop of Southwark",
-    "fullTitle": "The Rt Rev. the Lord Bishop of Southwark",
-    "party": "Bishops",
-    "house": "Lords",
-    "constituency": "Bishops",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/4345/Thumbnail",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
@@ -19841,6 +20096,21 @@
     "ministerialTitle": null,
     "department": null,
     "gender": "F",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
+    "id": 5463,
+    "name": "Lord Stace",
+    "fullTitle": "The  Lord Stace OBE",
+    "party": "Labour",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5463/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
     "isShadowMinister": false,
     "shadowMinisterialTitle": null
   },
@@ -21442,6 +21712,21 @@
     "house": "Lords",
     "constituency": "Life peer",
     "photoUrl": "https://members-api.parliament.uk/api/Members/4722/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
+    "id": 5471,
+    "name": "Lord Wormald",
+    "fullTitle": "The Lord Wormald KCB",
+    "party": "Crossbench",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5471/Thumbnail",
     "isMinister": false,
     "ministerialTitle": null,
     "department": null,
