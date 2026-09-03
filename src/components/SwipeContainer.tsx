@@ -50,10 +50,10 @@ export function SwipeContainer({ member, nextMember, onKnown, onUnknown, cardKey
         style={{
           flex: 1,
           position: 'relative',
+          alignSelf: 'center',
+          aspectRatio: '3 / 4',
           maxWidth: 400,
           maxHeight: 520,
-          width: '100%',
-          margin: '0 auto',
           minHeight: 0,
           overflow: 'hidden',
           borderRadius: 20,

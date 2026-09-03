@@ -28,6 +28,9 @@ jobs:
       - name: Fetch Parliament data
         run: npm run fetch-data
 
+      - name: Patch placeholder photos
+        run: npm run patch-photos
+
       - name: Check for changes
         id: changes
         run: |
