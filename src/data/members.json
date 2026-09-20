@@ -16110,6 +16110,21 @@
     "shadowMinisterialTitle": null
   },
   {
+    "id": 5483,
+    "name": "Lord Lehrfreund",
+    "fullTitle": "The Lord Lehrfreund MBE",
+    "party": "Labour",
+    "house": "Lords",
+    "constituency": "Life peer",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5483/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 4947,
     "name": "The Lord Bishop of Leicester",
     "fullTitle": "The Rt Rev. the Lord Bishop of Leicester",
