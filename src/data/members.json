@@ -10872,7 +10872,7 @@
     "department": null,
     "gender": "M",
     "isShadowMinister": true,
-    "shadowMinisterialTitle": "Shadow Minister (Environment, Food and Rural Affairs)"
+    "shadowMinisterialTitle": "Shadow Minister (Energy Security and Net Zero)"
   },
   {
     "id": 4582,
@@ -16275,21 +16275,6 @@
     "shadowMinisterialTitle": null
   },
   {
-    "id": 4954,
-    "name": "The Lord Bishop of Lichfield",
-    "fullTitle": "The Rt Rev. the Lord Bishop of Lichfield OBE",
-    "party": "Bishops",
-    "house": "Lords",
-    "constituency": "Bishops",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/4954/Thumbnail",
-    "isMinister": false,
-    "ministerialTitle": null,
-    "department": null,
-    "gender": "M",
-    "isShadowMinister": false,
-    "shadowMinisterialTitle": null
-  },
-  {
     "id": 573,
     "name": "Baroness Liddell of Coatdyke",
     "fullTitle": "The Rt Hon. the Baroness Liddell of Coatdyke",
@@ -16346,21 +16331,6 @@
     "ministerialTitle": null,
     "department": null,
     "gender": "F",
-    "isShadowMinister": false,
-    "shadowMinisterialTitle": null
-  },
-  {
-    "id": 4319,
-    "name": "The Lord Bishop of Lincoln",
-    "fullTitle": "The Rt Rev. the Lord Bishop of Lincoln",
-    "party": "Bishops",
-    "house": "Lords",
-    "constituency": "Bishops",
-    "photoUrl": "https://members-api.parliament.uk/api/Members/4319/Thumbnail",
-    "isMinister": false,
-    "ministerialTitle": null,
-    "department": null,
-    "gender": "M",
     "isShadowMinister": false,
     "shadowMinisterialTitle": null
   },
@@ -17652,7 +17622,7 @@
     "department": null,
     "gender": "M",
     "isShadowMinister": true,
-    "shadowMinisterialTitle": "Shadow Minister (Energy Security and Net Zero)"
+    "shadowMinisterialTitle": "Shadow Minister (Business, Innovation, Science and Trade)"
   },
   {
     "id": 5007,
