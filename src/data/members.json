@@ -30,6 +30,21 @@
     "shadowMinisterialTitle": null
   },
   {
+    "id": 5484,
+    "name": "Sagal Abdi-Wali",
+    "fullTitle": "Sagal Abdi-Wali MP",
+    "party": "Labour",
+    "house": "Commons",
+    "constituency": "Holborn and St Pancras",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5484/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "F",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 4212,
     "name": "Debbie Abrahams",
     "fullTitle": "Debbie Abrahams MP",
@@ -821,8 +836,8 @@
     "ministerialTitle": null,
     "department": null,
     "gender": "F",
-    "isShadowMinister": true,
-    "shadowMinisterialTitle": "Liberal Democrat Spokesperson (Care and Carers)"
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
   },
   {
     "id": 5314,
@@ -3162,7 +3177,7 @@
     "department": null,
     "gender": "M",
     "isShadowMinister": true,
-    "shadowMinisterialTitle": "Liberal Democrat Spokesperson (Immigration and Asylum)"
+    "shadowMinisterialTitle": "Liberal Democrat Deputy Chief Whip"
   },
   {
     "id": 5209,
@@ -4617,7 +4632,7 @@
     "department": null,
     "gender": "M",
     "isShadowMinister": true,
-    "shadowMinisterialTitle": "Liberal Democrat Spokesperson (Trade)"
+    "shadowMinisterialTitle": "Liberal Democrat Spokesperson (Care and Carers)"
   },
   {
     "id": 4621,
@@ -6311,8 +6326,8 @@
     "ministerialTitle": null,
     "department": null,
     "gender": "M",
-    "isShadowMinister": true,
-    "shadowMinisterialTitle": "Liberal Democrat Deputy Chief Whip"
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
   },
   {
     "id": 4759,
@@ -12781,8 +12796,8 @@
   },
   {
     "id": 5453,
-    "name": "Bishop of Durham",
-    "fullTitle": "The Rt Rev. Bishop of Durham",
+    "name": "The Lord Bishop of Durham",
+    "fullTitle": "The Rt Rev. the Lord Bishop of Durham",
     "party": "Bishops",
     "house": "Lords",
     "constituency": "Bishops",
@@ -12916,8 +12931,8 @@
   },
   {
     "id": 5454,
-    "name": "Bishop of Ely",
-    "fullTitle": "The Rt Rev. Bishop of Ely",
+    "name": "The Lord Bishop of Ely",
+    "fullTitle": "The Rt Rev. the Lord Bishop of Ely",
     "party": "Bishops",
     "house": "Lords",
     "constituency": "Bishops",
