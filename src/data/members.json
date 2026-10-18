@@ -5696,8 +5696,8 @@
     "ministerialTitle": null,
     "department": null,
     "gender": "M",
-    "isShadowMinister": true,
-    "shadowMinisterialTitle": "Liberal Democrat Spokesperson (Chief Secretary to the Treasury)"
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
   },
   {
     "id": 5057,
@@ -8072,7 +8072,7 @@
   {
     "id": 1516,
     "name": "Andy Slaughter",
-    "fullTitle": "Andy Slaughter MP",
+    "fullTitle": "Andy Slaughter KC MP",
     "party": "Labour",
     "house": "Commons",
     "constituency": "Hammersmith and Chiswick",
@@ -10755,6 +10755,21 @@
     "shadowMinisterialTitle": null
   },
   {
+    "id": 5485,
+    "name": "The Lord Bishop of Birmingham",
+    "fullTitle": "The Rt Rev. the Lord Bishop of Birmingham",
+    "party": "Bishops",
+    "house": "Lords",
+    "constituency": "Bishops",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5485/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
     "id": 2533,
     "name": "Lord Birt",
     "fullTitle": "The Lord Birt",
@@ -10796,6 +10811,21 @@
     "ministerialTitle": null,
     "department": null,
     "gender": "F",
+    "isShadowMinister": false,
+    "shadowMinisterialTitle": null
+  },
+  {
+    "id": 5486,
+    "name": "The Lord Bishop of Blackburn",
+    "fullTitle": "The Rt Rev. the Lord Bishop of Blackburn",
+    "party": "Bishops",
+    "house": "Lords",
+    "constituency": "Bishops",
+    "photoUrl": "https://members-api.parliament.uk/api/Members/5486/Thumbnail",
+    "isMinister": false,
+    "ministerialTitle": null,
+    "department": null,
+    "gender": "M",
     "isShadowMinister": false,
     "shadowMinisterialTitle": null
   },
